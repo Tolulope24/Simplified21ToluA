@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Simplified21ToluA
 {
-    public partial class Simplified21Form : Form
+    public partial class frmSimplified21 : Form
     {
-        public Simplified21Form()
+        public frmSimplified21()
         {
             InitializeComponent();
+            picFireworks.Hide();
+            lblComputerWins.Hide();
+            lblPlayerWins.Hide();
+
+        }
+
+        private void lblPlayerWins_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

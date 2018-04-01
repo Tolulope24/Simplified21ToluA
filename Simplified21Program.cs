@@ -16,7 +16,7 @@ namespace Simplified21ToluA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Simplified21Form());
+            Application.Run(new frmSimplified21());
         }
     }
 }

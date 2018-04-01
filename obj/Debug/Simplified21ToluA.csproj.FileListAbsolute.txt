@@ -1,0 +1,10 @@
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\bin\Debug\Simplified21ToluA.exe.config
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\bin\Debug\Simplified21ToluA.exe
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\bin\Debug\Simplified21ToluA.pdb
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.csprojResolveAssemblyReference.cache
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.frmSimplified21.resources
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.Properties.Resources.resources
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.csproj.GenerateResource.cache
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.csproj.CoreCompileInputs.cache
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.exe
+C:\Users\Tolu\Desktop\Grade 11 Programming\Simplified21ToluA\Simplified21ToluA\obj\Debug\Simplified21ToluA.pdb
