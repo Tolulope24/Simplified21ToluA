@@ -31,22 +31,28 @@
             this.btnHit = new System.Windows.Forms.Button();
             this.btnStay = new System.Windows.Forms.Button();
             this.lblComputerWins = new System.Windows.Forms.Label();
-            this.lblPlayerWins = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
+            this.lblPlayerWins = new System.Windows.Forms.Label();
+            this.picsecondComputerCard = new System.Windows.Forms.PictureBox();
+            this.picThirdComputerCard = new System.Windows.Forms.PictureBox();
+            this.picSecondPlayerCard = new System.Windows.Forms.PictureBox();
+            this.picThirdPlayerCard = new System.Windows.Forms.PictureBox();
+            this.picFirstComputerCard = new System.Windows.Forms.PictureBox();
+            this.picFirstPlayerCard = new System.Windows.Forms.PictureBox();
             this.picFireworks = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picsecondComputerCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThirdComputerCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSecondPlayerCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThirdPlayerCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFirstComputerCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFirstPlayerCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFireworks)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHit
             // 
-            this.btnHit.Location = new System.Drawing.Point(51, 173);
+            this.btnHit.Location = new System.Drawing.Point(12, 177);
             this.btnHit.Name = "btnHit";
             this.btnHit.Size = new System.Drawing.Size(75, 23);
             this.btnHit.TabIndex = 0;
@@ -55,7 +61,7 @@
             // 
             // btnStay
             // 
-            this.btnStay.Location = new System.Drawing.Point(51, 218);
+            this.btnStay.Location = new System.Drawing.Point(12, 232);
             this.btnStay.Name = "btnStay";
             this.btnStay.Size = new System.Drawing.Size(75, 26);
             this.btnStay.TabIndex = 1;
@@ -72,79 +78,15 @@
             this.lblComputerWins.TabIndex = 2;
             this.lblComputerWins.Text = "Computer Wins  !!!!";
             // 
-            // lblPlayerWins
-            // 
-            this.lblPlayerWins.AutoSize = true;
-            this.lblPlayerWins.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerWins.Location = new System.Drawing.Point(555, 9);
-            this.lblPlayerWins.Name = "lblPlayerWins";
-            this.lblPlayerWins.Size = new System.Drawing.Size(233, 38);
-            this.lblPlayerWins.TabIndex = 3;
-            this.lblPlayerWins.Text = "Player Wins !!!";
-            this.lblPlayerWins.Click += new System.EventHandler(this.lblPlayerWins_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(533, 150);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(106, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(318, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 396);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 356);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(48, 424);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "label8";
-            // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(645, 173);
+            this.btnStart.Location = new System.Drawing.Point(713, 218);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 10;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnRestart
             // 
@@ -154,6 +96,73 @@
             this.btnRestart.TabIndex = 11;
             this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
+            // lblPlayerWins
+            // 
+            this.lblPlayerWins.AutoSize = true;
+            this.lblPlayerWins.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerWins.Location = new System.Drawing.Point(546, 9);
+            this.lblPlayerWins.Name = "lblPlayerWins";
+            this.lblPlayerWins.Size = new System.Drawing.Size(233, 38);
+            this.lblPlayerWins.TabIndex = 13;
+            this.lblPlayerWins.Text = "Player Wins !!!";
+            // 
+            // picsecondComputerCard
+            // 
+            this.picsecondComputerCard.Location = new System.Drawing.Point(313, 271);
+            this.picsecondComputerCard.Name = "picsecondComputerCard";
+            this.picsecondComputerCard.Size = new System.Drawing.Size(71, 96);
+            this.picsecondComputerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picsecondComputerCard.TabIndex = 19;
+            this.picsecondComputerCard.TabStop = false;
+            // 
+            // picThirdComputerCard
+            // 
+            this.picThirdComputerCard.Location = new System.Drawing.Point(516, 271);
+            this.picThirdComputerCard.Name = "picThirdComputerCard";
+            this.picThirdComputerCard.Size = new System.Drawing.Size(71, 96);
+            this.picThirdComputerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picThirdComputerCard.TabIndex = 18;
+            this.picThirdComputerCard.TabStop = false;
+            // 
+            // picSecondPlayerCard
+            // 
+            this.picSecondPlayerCard.Location = new System.Drawing.Point(313, 69);
+            this.picSecondPlayerCard.Name = "picSecondPlayerCard";
+            this.picSecondPlayerCard.Size = new System.Drawing.Size(71, 96);
+            this.picSecondPlayerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picSecondPlayerCard.TabIndex = 17;
+            this.picSecondPlayerCard.TabStop = false;
+            // 
+            // picThirdPlayerCard
+            // 
+            this.picThirdPlayerCard.Location = new System.Drawing.Point(516, 69);
+            this.picThirdPlayerCard.Name = "picThirdPlayerCard";
+            this.picThirdPlayerCard.Size = new System.Drawing.Size(71, 96);
+            this.picThirdPlayerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picThirdPlayerCard.TabIndex = 16;
+            this.picThirdPlayerCard.TabStop = false;
+            this.picThirdPlayerCard.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // picFirstComputerCard
+            // 
+            this.picFirstComputerCard.Location = new System.Drawing.Point(106, 271);
+            this.picFirstComputerCard.Name = "picFirstComputerCard";
+            this.picFirstComputerCard.Size = new System.Drawing.Size(71, 96);
+            this.picFirstComputerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picFirstComputerCard.TabIndex = 15;
+            this.picFirstComputerCard.TabStop = false;
+            this.picFirstComputerCard.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // picFirstPlayerCard
+            // 
+            this.picFirstPlayerCard.Location = new System.Drawing.Point(106, 69);
+            this.picFirstPlayerCard.Name = "picFirstPlayerCard";
+            this.picFirstPlayerCard.Size = new System.Drawing.Size(71, 96);
+            this.picFirstPlayerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picFirstPlayerCard.TabIndex = 14;
+            this.picFirstPlayerCard.TabStop = false;
             // 
             // picFireworks
             // 
@@ -171,15 +180,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picsecondComputerCard);
+            this.Controls.Add(this.picThirdComputerCard);
+            this.Controls.Add(this.picSecondPlayerCard);
+            this.Controls.Add(this.picThirdPlayerCard);
+            this.Controls.Add(this.picFirstComputerCard);
+            this.Controls.Add(this.picFirstPlayerCard);
+            this.Controls.Add(this.lblPlayerWins);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblPlayerWins);
             this.Controls.Add(this.lblComputerWins);
             this.Controls.Add(this.btnStay);
             this.Controls.Add(this.btnHit);
@@ -187,6 +196,12 @@
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Name = "frmSimplified21";
             this.Text = "Simplified 21";
+            ((System.ComponentModel.ISupportInitialize)(this.picsecondComputerCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThirdComputerCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSecondPlayerCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThirdPlayerCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFirstComputerCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFirstPlayerCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFireworks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,16 +213,16 @@
         private System.Windows.Forms.Button btnHit;
         private System.Windows.Forms.Button btnStay;
         private System.Windows.Forms.Label lblComputerWins;
-        private System.Windows.Forms.Label lblPlayerWins;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.PictureBox picFireworks;
+        private System.Windows.Forms.Label lblPlayerWins;
+        private System.Windows.Forms.PictureBox picFirstPlayerCard;
+        private System.Windows.Forms.PictureBox picFirstComputerCard;
+        private System.Windows.Forms.PictureBox picThirdPlayerCard;
+        private System.Windows.Forms.PictureBox picSecondPlayerCard;
+        private System.Windows.Forms.PictureBox picThirdComputerCard;
+        private System.Windows.Forms.PictureBox picsecondComputerCard;
     }
 }
 

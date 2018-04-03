@@ -82,5 +82,65 @@
   <ItemGroup>
     <None Include="Resources\Fireworks.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c03.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c04.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c05.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c06.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c07.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c08.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c09.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d03.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d04.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d05.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d06.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d07.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d08.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d09.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d10.bmp" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
