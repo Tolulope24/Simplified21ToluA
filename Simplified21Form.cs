@@ -7,6 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ * Created by: Tolulope Adebayo
+ * Created on: 03-April-2018
+ * Created for: ICS3U Programming
+ * Assignment #5b - Simplified 21
+ * This program creates an interraction between the computer playing as a dealer and the user in a game of 21
+*/
+
 
 namespace Simplified21ToluA
 {
@@ -22,6 +30,7 @@ namespace Simplified21ToluA
             picFireworks.Hide();
             lblComputerWins.Hide();
             lblPlayerWins.Hide();
+            lblTie.Hide();
             picThirdComputerCard.Hide();
             picFirstComputerCard.Hide();
             picsecondComputerCard.Hide();
@@ -191,9 +200,6 @@ namespace Simplified21ToluA
             {
                 this.picThirdPlayerCard.Image = Properties.Resources.c10;
             }
-           
-
-
 
             // Assign Random Numbers for first Computer card Picture box
             if (computerFirstCardNumber == 1)
@@ -236,6 +242,7 @@ namespace Simplified21ToluA
             {
                 this.picFirstComputerCard.Image = Properties.Resources.d10;
             }
+
             // Assign Random Numbers for second Computer card Picture box
             if (computerSecondCardNumber == 1)
             {
@@ -277,6 +284,7 @@ namespace Simplified21ToluA
             {
                 this.picsecondComputerCard.Image = Properties.Resources.d10;
             }
+
             // Assign Random Numbers for third Computer card Picture box
             if (computerThirdCardNumber == 1)
             {
@@ -330,7 +338,10 @@ namespace Simplified21ToluA
             picsecondComputerCard.Hide();
             picThirdComputerCard.Hide();
             picThirdPlayerCard.Hide();
-
+            lblComputerWins.Hide();
+            lblPlayerWins.Hide();
+            lblTie.Hide();
+            picFireworks.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -392,16 +403,46 @@ namespace Simplified21ToluA
             if ((sumPlayerCard > 21) && (sumComputerCard < 21))
             {
                 lblComputerWins.Show();
+                lblPlayerWins.Hide();
                 picFireworks.Show();
             }
-            else if ((sumPlayerCard < 21) && (sumComputerCard > 21))
+            if ((sumPlayerCard <= 21) && (sumComputerCard >= 21))
+            {
+                lblPlayerWins.Show();
+                lblComputerWins.Hide();
+                picFireworks.Show();
+            }
+            if ((sumPlayerCard >= 21) && (sumComputerCard >= 21))
+            {
+                lblComputerWins.Show();
+                lblPlayerWins.Hide();
+                picFireworks.Show();
+            }
+            if (sumComputerCard > 21)
             {
                 lblPlayerWins.Show();
                 picFireworks.Show();
+                lblComputerWins.Hide();
             }
-            else if ((sumPlayerCard > 21) && (sumComputerCard > 21))
+            if (sumPlayerCard > 21)
             {
                 lblComputerWins.Show();
+                picFireworks.Show();
+                lblPlayerWins.Hide();
+
+            }
+            if ((sumPlayerCard == 21) && (sumComputerCard == 21))
+            {
+                lblPlayerWins.Hide();
+                lblTie.Show();
+                lblComputerWins.Hide();
+                picFireworks.Show();
+            }
+            if ((sumPlayerCard < 21) && (sumComputerCard < 21))
+            {
+                lblPlayerWins.Hide();
+                lblTie.Show();
+                lblComputerWins.Hide();
                 picFireworks.Show();
             }
 
@@ -410,7 +451,6 @@ namespace Simplified21ToluA
             btnStay.Enabled = false;
             btnStart.Enabled = false;
             picThirdPlayerCard.Show();
-            picThirdPlayerCard.Hide();
             picFirstComputerCard.Show();
             picsecondComputerCard.Show();
             picThirdComputerCard.Show();
@@ -450,16 +490,46 @@ namespace Simplified21ToluA
             if ((sumPlayerCard > 21) && (sumComputerCard < 21))
             {
                 lblComputerWins.Show();
+                lblPlayerWins.Hide();
                 picFireworks.Show();
             }
-            if ((sumPlayerCard < 21) && (sumComputerCard > 21))
+            if ((sumPlayerCard == 21) && (sumComputerCard == 21))
+            {
+                lblPlayerWins.Hide();
+                lblTie.Show();
+                lblComputerWins.Hide();
+                picFireworks.Show();
+            }
+            if ((sumPlayerCard <= 21) && (sumComputerCard >= 21))
             {
                 lblPlayerWins.Show();
+                lblComputerWins.Hide();
                 picFireworks.Show();
             }
-            if ((sumPlayerCard > 21) && (sumComputerCard > 21))
+            if ((sumPlayerCard < 21) && (sumComputerCard < 21))
+            {
+                lblPlayerWins.Hide();
+                lblTie.Show();
+                lblComputerWins.Hide();
+                picFireworks.Show();
+            }
+            if (sumComputerCard > 21)
+            {
+                lblPlayerWins.Show ();
+                picFireworks.Show();
+                lblComputerWins.Hide();
+            }
+            if (sumPlayerCard > 21)
             {
                 lblComputerWins.Show();
+                picFireworks.Show();
+                lblPlayerWins.Hide();
+
+            }
+            if ((sumPlayerCard >= 21) && (sumComputerCard >= 21))
+            {
+                lblComputerWins.Show();
+                lblPlayerWins.Hide();
                 picFireworks.Show();
             }
                 
